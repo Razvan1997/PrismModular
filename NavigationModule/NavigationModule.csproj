@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Images\DevOps\DevOps-Boards.png" />
+    <None Remove="Resources\Images\DevOps\DevOps-Overview.png" />
+    <None Remove="Resources\Images\DevOps\DevOps-Pipelines.png" />
+    <None Remove="Resources\Images\DevOps\DevOps-Repos.png" />
+    <None Remove="Resources\Images\DevOps\DevOps-TestPlans.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Resources\Styles\Fonts.xaml" />
+    <Page Remove="Resources\Styles\Style.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HandyControls" Version="3.5.2" />
+    <PackageReference Include="Prism.DryIoc" Version="8.1.97" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PrismModular.Core\PrismModular.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\DevOps\DevOps-Boards.png" />
+    <Resource Include="Resources\Images\DevOps\DevOps-Overview.png" />
+    <Resource Include="Resources\Images\DevOps\DevOps-Pipelines.png" />
+    <Resource Include="Resources\Images\DevOps\DevOps-Repos.png" />
+    <Resource Include="Resources\Images\DevOps\DevOps-TestPlans.png" />
+    <Resource Include="Resources\Styles\Fonts.xaml" />
+    <Resource Include="Resources\Styles\Style.xaml" />
+  </ItemGroup>
+
+</Project>

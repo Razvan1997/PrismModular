@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>PrismModular</AssemblyName>
+    <RootNamespace>PrismModular</RootNamespace>
+    <Version>1.0.0.0</Version>
+    <Configurations>Debug;Release</Configurations>
+    <Copyright>Copyright © Razvan 2024</Copyright>
+    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;Core</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>TRACE;Core</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="HandyControls" Version="3.5.2" />
+    <PackageReference Include="Prism.DryIoc" Version="8.1.97" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ContentModule\ContentModule.csproj" />
+    <ProjectReference Include="..\NavigationModule\NavigationModule.csproj" />
+  </ItemGroup>
+</Project>

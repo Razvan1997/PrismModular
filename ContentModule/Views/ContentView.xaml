@@ -1,0 +1,37 @@
+﻿<UserControl
+    x:Class="ContentModule.Views.ContentView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:hc="https://handyorg.github.io/handycontrol"
+    xmlns:local="clr-namespace:ContentModule.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <StackPanel
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        Orientation="Horizontal">
+        <TextBlock
+            FontSize="30"
+            FontWeight="Bold"
+            Text="{Binding Header}" />
+
+        <!--<GroupBox
+            Width="500"
+            Height="200"
+            Padding="10"
+            hc:TitleElement.TitlePlacement="Top"
+            Header="{Binding Header}"
+            Style="{StaticResource GroupBoxTab.Small}">
+            <Border Background="{DynamicResource RegionBrush}" CornerRadius="4">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Text="test" />
+            </Border>
+        </GroupBox>-->
+
+    </StackPanel>
+</UserControl>
